@@ -1,13 +1,15 @@
 module.exports = {
-	helpCmdPerPage: 10, //- Number of commands per page of help command
-	lyricsMaxResults: 5, //- Number of results for lyrics command (Do not touch this value if you don't know what you are doing)
-	adminId: "UserId", //- Replace UserId with the Discord ID of the admin of the bot
-	token: process.env.token || "", //- Bot's Token
-	clientId: process.env.clientId || "", //- ID of the bot
-	clientSecret: process.env.clientSecret || "", //- Client Secret of the bot
-	port: 4200, //- Port of the API and Dashboard
-	scopes: ["identify", "guilds", "applications.commands"], //- Discord OAuth2 Scopes
-	inviteScopes: ["bot", "applications.commands"], // Invite link scopes
+	helpCmdPerPage: 10, //- 幫助命令每頁的命令數
+	lyricsMaxResults: 5, //- 歌詞命令的結果數（如果您不知道自己在做什麼，請不要觸摸此值）
+	adminId: "UserId", //- 將 UserId 替換為機器人管理員的 Discord ID
+	// 如何查詢我的Discord ID ?
+	// 請查看 README.MD 文件！
+	token: process.env.token || "", //- 機器人的Token
+	clientId: process.env.clientId || "", //- 機器人的 ID
+	clientSecret: process.env.clientSecret || "", //- 機器人的ClientSecret
+	port: 4200, //- API 和儀表板的端口（如果您不知道自己在做什麼，請不要觸摸此值）
+	scopes: ["identify", "guilds", "applications.commands"], //- Discord OAuth2 範圍
+	inviteScopes: ["bot", "applications.commands"], // 邀請連結範圍
 	serverDeafen: true, //- If you want bot to stay deafened
 	defaultVolume: 100, //- Sets the default volume of the bot, You can change this number anywhere from 1 to 100
 	supportServer: "https://discord.gg/sbySMS7m3v", //- Support Server Link
