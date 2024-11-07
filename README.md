@@ -11,14 +11,14 @@
  - 更多指令和功能
  - 還有更多即將推出！
 
-## 🚧 | Prerequisites
+## 🚧 | 先決條件
 
 - [Node.js 16+](https://nodejs.org/en/download/)
 - [Lavalink Server](https://code.darrennathanael.com/how-to-lavalink)
-- You'll need to run `npm run deploy` or `yarn deploy`. to initialized the slash commands. _You can do this on your pc
-  locally_
+- 您需要執行"npm rundeploy"或"yarndeploy"。初始化斜杠命令。 _您可以在您的電腦上執行此操作
+ 本地_
 
-> NOTE: Lavalink is needed for music functionality. You need to have a working Lavalink server to make the bot work.
+> 注意：音樂功能需要 Lavalink。您需要有一個可用的 Lavalink 伺服器才能使機器人工作。
 
 ## 📝 | Important Note if you're Switching from v4 to v5
 
