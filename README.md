@@ -2,16 +2,14 @@
 
 ## ✨最新更新
 
-v5.1 Is in development! Go check it out [HERE!](https://github.com/wtfnotavailable/Discord-MusicBot)
-
-What do you gain from it? Let us explain:
- - Completely modular docker environment for easier development and deployment
- - A WORKING DASHBOARD!!!
- - DB Integration for you to save your favorite songs in
- - Integrated self hosted Lavalink
- - Dedicated query channel
- - More commands and functionalities
- - And so much more to come!
+你從中得到什麼？讓我們解釋一下：
+ - 完全模組化的docker環境，更容易開發和部署
+ - 工作儀表板！
+ - 資料庫集成，讓您保存您最喜愛的歌曲
+ - 整合自架式Lavalink
+ - 專用查詢頻道
+ - 更多指令和功能
+ - 還有更多即將推出！
 
 ## 🚧 | Prerequisites
 
