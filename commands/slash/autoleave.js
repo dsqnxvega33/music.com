@@ -4,7 +4,7 @@ const SlashCommand = require("../../lib/SlashCommand");
 
 const command = new SlashCommand()
   .setName("autoleave")
-  .setDescription("Automatically leaves when everyone leaves the voice channel (toggle)")
+  .setDescription("當所有人離開語音頻道時自動離開（切換）")
   .setRun(async (client, interaction) => {
     let channel = await client.getChannel(client, interaction);
     if (!channel) return;
@@ -17,7 +17,7 @@ const command = new SlashCommand()
         embeds: [
           new MessageEmbed()
             .setColor("RED")
-            .setDescription("Lavalink node is not connected"),
+            .setDescription("Lavalink節點未連接"),
         ],
       });
 
@@ -26,7 +26,7 @@ const command = new SlashCommand()
         embeds: [
           new MessageEmbed()
             .setColor("RED")
-            .setDescription("There's nothing playing in the queue"),
+            .setDescription("隊列中沒有任何內容正在播放"),
         ],
         ephemeral: true,
       });
@@ -44,7 +44,7 @@ const command = new SlashCommand()
     autoLeaveEmbed
 			.setDescription(`**Auto Leave is** \`${!autoLeave ? "ON" : "OFF"}\``)
 			.setFooter({
-			  text: `The player will ${!autoLeave ? "now automatically" : "not automatically"} leave when the voice channel is empty.`
+			  text: `機器人將 ${!autoLeave ? "自動" : "不會自動"} 當語音通道為空時離開。`
 			});
     client.warn(
       `Player: ${player.options.guild} | [${colors.blue(
