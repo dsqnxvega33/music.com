@@ -4,7 +4,7 @@ const SlashCommand = require("../../lib/SlashCommand");
 
 const command = new SlashCommand()
 	.setName("247")
-	.setDescription("Prevents the bot from ever disconnecting from a VC (toggle)")
+	.setDescription("防止機器人與 VC 斷開連接（切換）")
 	.setRun(async (client, interaction, options) => {
 		let channel = await client.getChannel(client, interaction);
 		if (!channel) {
@@ -48,7 +48,7 @@ const command = new SlashCommand()
 		twentyFourSevenEmbed
 		  .setDescription(`**24/7 mode is** \`${!twentyFourSeven ? "ON" : "OFF"}\``)
 		  .setFooter({
-		    text: `The bot will ${!twentyFourSeven ? "now" : "no longer"} stay connected to the voice channel 24/7.`
+		    text: `機器人將 ${!twentyFourSeven ? "now" : "no longer"} 24/7 與語音頻道保持聯繫.`
       });
 		client.warn(
 			`Player: ${ player.options.guild } | [${ colors.blue(
@@ -70,10 +70,10 @@ const command = new SlashCommand()
 	});
 
 module.exports = command;
-// check above message, it is a little bit confusing. and erros are not handled. probably should be fixed.
-// ok use catch ez kom  follow meh ;_;
-// the above message meaning error, if it cant find it or take too long the bot crashed
-// play commanddddd, if timeout or takes 1000 years to find song it crashed
-// OKIE, leave the comment here for idk
-// Comment very useful, 247 good :+1:
-// twentyFourSeven = best;
+// 檢查上面的訊息，它有點令人困惑。並且錯誤不被處理。可能應該修復。
+// 好的，使用 catch ez kom follow meh ;_;
+// 上面的訊息意味著錯誤，如果找不到它或花費太長時間，機器人就會崩潰
+// 播放commanddddd，如果超時或需要1000年才能找到歌曲則崩潰
+// OKIE，請在此處留下 idk 的評論
+// 評論非常有用，247 好 :+1:
+//二十四七=最佳；
