@@ -2,11 +2,11 @@ const SlashCommand = require("../../lib/SlashCommand");
 
 const command = new SlashCommand()
 	.setName("clean")
-	.setDescription("Cleans the last 100 bot messages from channel.")
+	.setDescription("清除頻道中最後 100 個機器人訊息。")
 	.addIntegerOption((option) =>
 		option
 			.setName("number")
-			.setDescription("Number of messages to delete.")
+			.setDescription("要刪除的訊息數。")
 			.setMinValue(2).setMaxValue(100)
 			.setRequired(false),
 	)
@@ -31,13 +31,13 @@ const command = new SlashCommand()
 						!deletedMessages.some(deletedMsg => deletedMsg == msg);
 					});
 					if (messages.size > 0) {
-						client.log(`Deleting [${ messages.size }] messages older than 14 days.`)
+						client.log(`正在刪除 [${ messages.size }] 超過 14 天的消息。`)
 						for (const msg of messages) {
 							await msg.delete();
 						}
 					}
 					
-					await interaction.editReply({ embeds: [client.Embed(`:white_check_mark: | Deleted ${ botMessages.length } bot messages`)] });
+					await interaction.editReply({ embeds: [client.Embed(`:white_check_mark: | 刪除 ${ botMessages.length } 機器人訊息。`)] });
 					setTimeout(() => {
 						interaction.deleteReply();
 					}, 5000);

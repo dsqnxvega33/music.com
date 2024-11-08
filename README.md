@@ -1,26 +1,24 @@
-<h1 align="center"><img src="./assets/logo.gif" width="30px"> Discord Music Bot <img src="./assets/logo.gif" width="30px"></h1>
+<h1 align="center"><img src="./assets/logo.gif" width="30px"> Discord音樂機器人 <img src="./assets/logo.gif" width="30px"></h1>
 
-## ✨Latest Updates
+## ✨最新更新
 
-v5.1 Is in development! Go check it out [HERE!](https://github.com/wtfnotavailable/Discord-MusicBot)
+你從中得到什麼？讓我們解釋一下：
+ - 完全模組化的docker環境，更容易開發和部署
+ - 工作儀表板！
+ - 資料庫集成，讓您保存您最喜愛的歌曲
+ - 整合自架式Lavalink
+ - 專用查詢頻道
+ - 更多指令和功能
+ - 還有更多即將推出！
 
-What do you gain from it? Let us explain:
- - Completely modular docker environment for easier development and deployment
- - A WORKING DASHBOARD!!!
- - DB Integration for you to save your favorite songs in
- - Integrated self hosted Lavalink
- - Dedicated query channel
- - More commands and functionalities
- - And so much more to come!
-
-## 🚧 | Prerequisites
+## 🚧 | 先決條件
 
 - [Node.js 16+](https://nodejs.org/en/download/)
 - [Lavalink Server](https://code.darrennathanael.com/how-to-lavalink)
-- You'll need to run `npm run deploy` or `yarn deploy`. to initialized the slash commands. _You can do this on your pc
-  locally_
+- 您需要執行`npm run deploy`或`yarn deploy`。初始化斜杠命令。 _您可以在您的電腦上執行此操作
+ 本地_
 
-> NOTE: Lavalink is needed for music functionality. You need to have a working Lavalink server to make the bot work.
+> 注意：音樂功能需要 Lavalink。您需要有一個可用的 Lavalink 伺服器才能使機器人工作。
 
 ## 📝 | Important Note if you're Switching from v4 to v5
 

@@ -4,7 +4,7 @@ const SlashCommand = require("../../lib/SlashCommand");
 
 const command = new SlashCommand()
 	.setName("autoqueue")
-	.setDescription("Automatically add songs to the queue (toggle)")
+	.setDescription("自動將歌曲新增至隊列（切換）")
 	.setRun(async (client, interaction) => {
 		let channel = await client.getChannel(client, interaction);
 		if (!channel) {
@@ -19,7 +19,7 @@ const command = new SlashCommand()
 				embeds: [
 					new MessageEmbed()
 						.setColor("RED")
-						.setDescription("Lavalink node is not connected"),
+						.setDescription("Lavalink節點未連接"),
 				],
 			});
 		}
@@ -29,7 +29,7 @@ const command = new SlashCommand()
 				embeds: [
 					new MessageEmbed()
 						.setColor("RED")
-						.setDescription("There's nothing playing in the queue"),
+						.setDescription("隊列中沒有任何內容正在播放"),
 				],
 				ephemeral: true,
 			});
@@ -47,7 +47,7 @@ const command = new SlashCommand()
 		autoQueueEmbed
 		  .setDescription(`**Auto Queue is** \`${!autoQueue ? "ON" : "OFF"}\``)
 		  .setFooter({
-		    text: `Related music will ${!autoQueue ? "now be automatically" : "no longer be"} added to the queue.`
+		    text: `相關音樂將 ${!autoQueue ? "自動" : "不自動"} 添加到隊列中.`
       });
 		client.warn(
 			`Player: ${ player.options.guild } | [${ colors.blue(

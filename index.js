@@ -1,4 +1,4 @@
-//JotaroKujo0525 note, this is a deed that i should've done a long time ago
+//請勿修改此文件，除非你有十分把握你的技術！
 require('dotenv').config()
 
 const DiscordMusicBot = require("./lib/DiscordMusicBot");
